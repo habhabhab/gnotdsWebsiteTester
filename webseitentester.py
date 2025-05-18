@@ -19,6 +19,12 @@ folgende Funktionen:
 <by Hannes Breuer, hannes.breuer@gnotds.de, 2025>
 """ 
 
+import os
+
+"""
+Frontend ohne eigene Funktionalität. ASCII-Art: 
+https://patorjk.com/software/taag/#p=display&f=Kban&t=GNotDS%20Webseitentest
+"""
 print("===============================================================================================================================================================\n")
 print(" ..|'''.|  '|.   '|'           .   '||''|.    .|'''.|     '|| '||'  '|'         '||                      ||    .                      .                    .   ")
 print(".|'     '   |'|   |    ...   .||.   ||   ||   ||..  '      '|. '|.  .'    ....   || ...   ....    ....  ...  .||.    ....  .. ...   .||.    ....   ....  .||.  ")
@@ -35,4 +41,24 @@ print("4. Magic happens. Warte bis das Skript durchgelaufen ist.")
 print("5. Kopiere die Ergebnisdatei, z.B. die inspection.pdf, in einen anderen Ordner oder auf deinen Desktop bevor du einen erneuten Test ausführst. Die Ergebnisse im Zielordner werden bei jedem Test überschrieben.")
 print("\n\n")
 
-input("press enter to exit")
+"""
+ab hier beginnt der programmatische Teil
+"""
+# url der Webseite wird in Variable url geschrieben
+url = input("Drücke die rechte Maustaste, um die URL zur Notarwebseite hier einzufügen: ")
+wecCommand = 'website-evidence-collector ' + url + ' --overwrite'
+print("Der Befehl lautet: " + wecCommand)
+input("drücke enter")
+print(os.open('website-evidence-collector https://www.heise.de --overwrite').read())
+#print(os.open(wecCommand).read())
+input("drücke enter")
+
+# zum Schluss wird der Ordner mit den Ergebnissen geöffnet
+# konstruiere den Pfad zum Ordner mit den Ergebnissen
+outputPath = os.path.join("Users", os.getlogin(), "output")
+# öffnet den Pfad und beendet das aktuelle Terminal
+input("Drücke Enter um das Programm zu beenden und die Ergebnisse anzuzeigen.")
+#os.startfile(outputPath)
+# os.startfile öffnet Pfade zu Ordnern immer mit dem Explorer
+os.startfile('C:\\Users\\Hannes Breuer\\output')
+exit()
