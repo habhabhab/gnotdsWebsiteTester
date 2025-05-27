@@ -11,7 +11,12 @@
 @echo WILLIKOMMEN BEI UNSEREM WEBSEITEN TESTTOOL
 @echo Um eine Webseite zu testen, einfach die URL der Webseite kopieren.
 @echo Beachte: das "http://" oder "https://" muss enthalten sein.
+@echo Beispiel: https://www.beispiel-notar.de
 set /p url="Drücke jetzt bitte ein mal die rechte Maustaste, um die URL einzufügen und bestätige deine Einfabe mit ENTER: "
 
 website-evidence-collector %url% --overwrite
+
+pause
+
+%SystemRoot%\explorer.exe ".\output"
 pause
