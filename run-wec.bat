@@ -5,8 +5,7 @@
 ::Dieses Skript öffnet den Website Evidence Collector und lässt ihn auf eine abgefragte URL starten
 ::Website Evidence Collector muss extra installiert werden: https://code.europa.eu/EDPS/website-evidence-collector
 
-::color 17
-::Farbschema angepasst
+
 
 @echo off
 echo ======================================================================================================================
