@@ -28,7 +28,7 @@ echo 6. Die Ergebnisse findest du im Ordner namens "output" auf deinem Desktop.
 echo.
 echo.
 set /p url="Maus in dieses Fenster bewegen und ein mal die rechte Maustaste druecken, um die URL einzufuegen und dann ENTER druecken "
-
+%SystemRoot%\explorer.exe ".\output"
 website-evidence-collector %url% --overwrite
 
 pause

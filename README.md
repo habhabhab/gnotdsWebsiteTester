@@ -25,10 +25,21 @@ Damit dieses Skript auf den Website Evidence Collector zugreifen kann, muss er n
 
 3. Sollte alles ohne Fehlermeldung geklappt haben, einfach noch manuell das Ergebnis sichttesten: Öffne den Windows Explorer und navigiere zum Ordner `C:\Users\{username}\output`. Dort findest du die Testergebnisse. Öffne die Datei `inspection.pdf`. Dort solltest du nun die Ergebnisse für google.de mit einem aktuellen Zeitstempel finden.
 
-4. Lade die Skript-Datei `webseitentester.py` aus diesem Repository herunter und lege sie auf dem Desktop ab.
+4. Lade die Skript-Datei `run-wec.bat` aus diesem Repository herunter und lege sie auf dem Desktop ab.
 
-5. Stell ein, dass .py-Dateien standardmäßig mit Python geöffnet werden.Der User kann das Skript jetzt jederzeit durch einfaches Doppelklicken auf die Skriptdatei auf seinem Desktop starten.
+5. Der User kann das Skript jetzt jederzeit durch einfaches Doppelklicken auf die Skriptdatei auf seinem Desktop starten.
+
+6. Einfach einmal testen, indem du den Anweisungen im Terminal folgst. Das Ergebnis des Webseitentests wird in dem Ordner `output` abgelegt, der immer an dem Ort angelegt wird, an dem auch die .bat liegt. Liegt die Skriptdatei also auf dem Desktop, wird der Ordner für die Ergebnisse auch am Desktop erzeugt. Es sollte sich aber beim Durchlaufen des Skripts ein Explorerfenster für die Ergebnisse öffnen.
+
+### Planned Features ### 
+
+* Derzeit sorgt der Website Evidence Collector noch dafür, dass das Terminal-Fenster nach Durchlauf des WEC geschlossen wird. Irgendwann habe ich hoffentlich mal Zeit, dem ganzen auf den Grund zu gehen. Eigentlich wünsche ich mir, dass das Fenster noch geöffnet bleibt.
+* Sollten Fehler beim Durchlaufen des WEC geworfen werden, kann man sich die gesamte Konsolenausgabe nach Durchlaufen des Programms anzeigen lassen, da im `output`-Ordner die Datei `inspection.log` angelegt wird.
+* Der Befehl zum Öffnen des Output-Ordners wird nicht ausgeführt, wenn der Befehl am Ende des Skripts steht, da das Terminal-Fenster sofort nach Abschluss des WEC geschlossen wird, also bevor die Zeile ausgeführt wird. Dirty workaround ist bisher, dass der Ziel-Ordner erst geöffnet wird und danach das Programm startet.
+* Wichtigstes Feature: ASCII-Art
+* Weil Windows doof ist musste das Ganze erstmal als Batch-Datei erstellt werden. Zukünfitg möchte ich ein Python-Programm schreiben, das ein wirkliches Frontend anbietet
 
 ## Hinweise für den Nutzer ##
 
-Eigentlich erklärt unser Skript alle Einzelschritte. Aber es sollte trotzdem erwähnt werden, dass der Webseite Evidence Collector die Ergebnisse immer im Ordner `C:\Users\{username}\output` ablegt. **Lasse ich das Skript erneut laufen, werden alte Ergebnisse überschrieben.** Möchte man also mehrere Webseiten nacheinander prüfen, muss man die Ergebnisse (z.B. die Datei `inspection.pdf`) immer erst manuell aus dem Ordner kopieren.
+* Eigentlich erklärt unser Skript alle Einzelschritte. Aber es sollte trotzdem erwähnt werden, dass der Webseite Evidence Collector die Ergebnisse immer im Ordner `\output` ablegt. **Lasse ich das Skript erneut laufen, werden alte Ergebnisse überschrieben.** Möchte man also mehrere Webseiten nacheinander prüfen, muss man die Ergebnisse (z.B. die Datei `inspection.pdf`) immer erst manuell aus dem Ordner kopieren.
+* das bedeutet auch, dass zuerst alte Testdateien zu sehen sind, wenn der `output`-Ordner von unserem Webseitentestskript göffnet wird. Bevor du Dateien öffnest also erst warten, bis der WEC durchgelaufen ist und sich das Terminal-Fenster geschlossen hat!
