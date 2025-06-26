@@ -1,5 +1,3 @@
-@echo off
-
 ::<by Hannes Breuer, GNotDS, hannes.breuer@gnotds.de, 2025>
 
 ::Dieses Skript öffnet den Website Evidence Collector und lässt ihn auf eine abgefragte URL starten
