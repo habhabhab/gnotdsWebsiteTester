@@ -8,11 +8,29 @@
 ::color 17
 ::Farbschema angepasst
 
-@echo WILLIKOMMEN BEI UNSEREM WEBSEITEN TESTTOOL
-@echo Um eine Webseite zu testen, einfach die URL der Webseite kopieren.
-@echo Beachte: das "http://" oder "https://" muss enthalten sein.
-@echo Beispiel: https://www.beispiel-notar.de
-set /p url="Drücke jetzt bitte ein mal die rechte Maustaste, um die URL einzufügen und bestätige deine Einfabe mit ENTER: "
+@echo off
+echo ======================================================================================================================
+echo.
+echo.
+echo WILLIKOMMEN BEI UNSEREM WEBSEITENTESTTOOL
+echo.
+echo.
+echo ======================================================================================================================
+echo.
+echo.
+echo Anleitung
+echo.
+echo 1. URL der Webseite aus dem Browser kopieren.
+echo Beachte: das "http://" oder "https://" muss enthalten sein.
+echo Beispiel: https://www.beispiel-notar.de
+echo 2. Url hier einfuegen.
+echo 3. Enter druecken.
+echo 4. Das Skript arbeitet.
+echo 5. Danach beendet sich das Programm und dieses Fenster schliesst sich.
+echo 6. Die Ergebnisse findest du im Ordner namens "output" auf deinem Desktop.
+echo.
+echo.
+set /p url="Maus in dieses Fenster bewegen und ein mal die rechte Maustaste druecken, um die URL einzufuegen und dann ENTER druecken "
 
 website-evidence-collector %url% --overwrite
 
