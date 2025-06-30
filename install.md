@@ -2,7 +2,7 @@
 
 Die Installationsanleitung für den WEC im offiziellen Repo beschränkt sich auf Linux-Systeme und ist nicht 1:1 auf Windows anwendbar. Hier ist die angepasste Installationsanleitung.
 
-#### 0. Das Repo herunterladen
+#### 0. Dieses Repo herunterladen
 * Am besten das gesamte Repo als ```.zip``` herunterladen. Dann sind alle notwendigen Dateien gleich auf dem Gerät.
 
 ## Abhängigkeiten installieren
@@ -43,7 +43,7 @@ website-evidence-collector http://www.gnotds.de --overwrite
 ## Unser Skript hinzufügen
 
 #### 7. Unser Skript startklar machen
-* Hole die Datei ```run-wec.bat``` aus dem Zip-Ordner zum Repo und lege sie auf dem Desktop ab.
+* Kopiere die Datei ```run-wec.bat``` aus dem Zip-Ordner auf den Desktop.
 
 #### 8. Testlauf
 * Doppelklick auf die ```run-wec.bat```-Datei öffnet ein Terminal.
@@ -51,4 +51,4 @@ website-evidence-collector http://www.gnotds.de --overwrite
 ```
 https://www.google.de
 ```
-* das Ergebnis wird im Ordner ```\output\``` abgelegt. Der Ordner wird in dem Ordner erzeugt, in dem auch die Datei ```zun-wec``` liegt, also z.B. auf dem Desktop.
+* das Ergebnis wird im Ordner ```\output\``` abgelegt. Der Ordner wird in dem Ordner erzeugt, in dem auch die Datei ```run-wec.bat``` liegt, also z.B. auf dem Desktop.
