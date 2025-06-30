@@ -28,10 +28,9 @@ echo 6. Die Ergebnisse findest du im Ordner namens "output" auf deinem Desktop.
 echo.
 echo.
 set /p url="Maus in dieses Fenster bewegen und ein mal die rechte Maustaste druecken, um die URL einzufuegen und dann ENTER druecken "
+
+::Öffne Ordner mit den Ergebnissen im Explorer
 %SystemRoot%\explorer.exe ".\output"
+
+::Führe den WEC aus
 website-evidence-collector %url% --overwrite
-
-pause
-
-%SystemRoot%\explorer.exe ".\output"
-pause

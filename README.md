@@ -25,7 +25,7 @@ Damit dieses Skript auf den Website Evidence Collector zugreifen kann, muss er n
 
 1. Website Evidence Collector nach Anleitung installieren. Dabei auch alle notwendigen Dependencies installieren. Diese sind alle in der Installationsanleitung im EU-Git genannt.
 
-2. einen Testlauf starten. Dafür folgenden Code kopieren:   
+2. einen Testlauf starten. Dafür folgenden Code kopieren:
     ```
     website-evidence-collector https://www.google.de --overwrite
     ```

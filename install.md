@@ -7,7 +7,8 @@ Die Installationsanleitung für den WEC im offiziellen Repo beschränkt sich auf
 
 ## Abhängigkeiten installieren
 
-#### 1. Auf dem Gerät muss Node.js installiert sein: https://nodejs.org/en/download 
+#### 1. Auf dem Gerät muss Node.js installiert sein
+* Node-Installer herunterladen: https://nodejs.org/en/download 
 * Bei der Installation darauf achten, dass NPM mit installiert wird (vorausgewählt).
 * Bei ```Automatically install the necessary tools. ...``` muss ein Häkchen gesetzt werden.
 * Nach dem Durchlaufen des Windows Installers für Node.js öffnet sich eine Powershell für die Installation der zusätzlichen Softwarepackages. Einfach durchklicken.
@@ -30,7 +31,7 @@ Die Installationsanleitung für den WEC im offiziellen Repo beschränkt sich auf
 ```bash
 npm install --global @EDPS/website-evidence-collector
 ```
-* Zuschauen und staunen.
+* Zuschauen und staunen. (es passiert quasi gar nix)
 
 #### 6. Installation testen
 * Nach dem Abschluss der Installation einfach folgenden Befehl in ein Terminal kopieren und mit Enter bestätigen:
@@ -42,10 +43,10 @@ website-evidence-collector http://www.gnotds.de --overwrite
 ## Unser Skript hinzufügen
 
 #### 7. Unser Skript startklar machen
-* Lade die Datei ```run-wec.bat``` aus diesem Repo herunter und lege sie auf dem Desktop ab.
+* Hole die Datei ```run-wec.bat``` aus dem Zip-Ordner zum Repo und lege sie auf dem Desktop ab.
 
 #### 8. Testlauf
-* Doppelklick auf die ```.bat```-Datei öffnet ein Terminal.
+* Doppelklick auf die ```run-wec.bat```-Datei öffnet ein Terminal.
 * einfach irgendeine Webseite testen, z.B. einfach diese URL hineinkopieren:
 ```
 https://www.google.de
